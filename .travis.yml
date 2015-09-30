@@ -1,3 +1,23 @@
 language: ruby
 rvm:
   - 2.2.1
+
+before_script:
+ - chmod +x ./script/cibuild
+
+script: ./script/cibuild 
+
+branches:
+  only:
+    - nick
+
+deploy:
+  provider: s3
+  secure: "HLjbJ1M/Hj89jQYVxdaaPgzaGW08Qgvivsf9cJSG3I2CSPiSDYrrl8MBctSEGBaMBNoZfwx3zR86MdhGG2flrEd5PsDb0gpv601utZhlD+rk2DR9kLMlv+wrF00YeUpa06/WcvgzYOWxP5l8mq/4Zx83M0ErgYml+0CByOswhlEHP2Ln2teNIAeWTxfhiRtdRmpZeruoTEJFRCZPVq3aH7TEetddiQoAE5dCOcMhLMa+dEwGwh/AF6MAcNgi4i+uGQc43TKBz9MAqJALBNQyo03dogyOuV501exTfudM3UJH/lKTn87vkDX5A8hNFcOH9BDsafk0asw+k6JMy5cE2gsCbhyYHSD4AhWrrIhmJFcWs3/VdboOmbOZXG4UhpK+/XDrRUatnkm7nrRbXOLPfOkSGBtpV7KfrQ7solcngR+mjrVR86zJ9rZQVZcbeUlRUEeIVngcz0wh1ibatrHkuCY5hWvZIw4eq8W+ogmqxqFOfBuEX8yy3q75on8UTbE8TQupD4/1lNYp5sZRb2+gr5147YXKUd+G3W72SUsOD8JxGc+GT/lMMN+gtJgcjQweJv15mLSONl42VDMLJeePYx2bAqIebMcexj8YRae3ORBvUj7ud+Bugwep2/6obAG/lFMCYAaUUFhlq43DUktfCEnBHV1H461HK1N0GLhvFnk="
+  secure: "B1GdxmIJZd4fHVeVhzVIiM/VushlEgzitvOfazceNKAeaXyzOTwWQXKL9o9n9qQ+6NbUstQ6g0wW0f7NiTRyNfDk3DGCdCj7hGbkwxrGFgWFVNsfGm+lLcImZyBY6NfTUeZmGocdD+07doeI6qACZpVzVhN7kHbpXBdnxpoQU8+15zQkDNGF8RU+YZhhmLS3CxgLAsVvpvqeSm+LFOV5wCaNZWJ1PJNTQJAzRMXTFJAKbG6AWFYQMw9Wjc3HvhdMh2pG2oHhflGGjBMTt4hva1/0RWooIKF+iP1Mpl6NpG+ZeJGnznBGBQFR/rfV1h4mfXtYAYup+sMSHncUpo85JlgctBr6v+cI3XonOIuBSObWwY90LQZ+wIG3CM1oeNGgDFyLMxL6pmVU0W2Iqm/2fRBmW/xAOgnCT+IJTiimc/bVfSnZtihrTpNn1WWlMmiwpw5+eGLj8FDqnH8/dzwS7CkUr2olxA+KBS2PM0dzFiD57HdSIeaHj9CqbSUD3SPTUppTTtY5cB35FOHBiWIKWNYqegAuzdxy/APii+OsehuKD/LHxmVFc31WOXIv/bG+eAGAVwviZzaVAnAk8CPGXCV+EApRbpGYglZ/myVd5Ltvp+Z9QnUIkKmEUuGPPtpkb3zuv3Td0T/PC31eaL+MiaRIQGXQIMRt/5mFHV/kkk8="
+  bucket: "jekylldocs"
+  local_dir: build
+  skip_cleanup: true
+  acl: public_read
+  on:
+    branch: nick
