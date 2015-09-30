@@ -5,7 +5,7 @@ audience: designers
 product: all
 platform: all
 version: all
-destination: ../doc_designers
+destination: _site
 topnav_title: Jekyll Documentation Theme
 homepage_title: Jekyll Documentation Theme &mdash; Designers
 site_title: Jekyll Documentation Theme &mdash; Designers
