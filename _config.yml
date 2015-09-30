@@ -27,10 +27,10 @@ exclude:
   - doc_multi*
 
 # same for all
-host: 127.0.0.1
+host: 0.0.0.0
 feedback_email: tomjohnson1492@gmail.com
 sidebar_accordion: true
-markdown: redcarpet
+markdown: rdiscount
 print: false
 theme_file: theme-blue.css
 # only use suffix if you need to force index.html to display
@@ -60,3 +60,5 @@ defaults:
     values:
       layout: "post"
       comments: true
+
+exclude: ['vendor']
