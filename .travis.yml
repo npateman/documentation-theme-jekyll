@@ -17,7 +17,7 @@ deploy:
   access_key_id: AKIAI3CBQKSOI4YUEP4A
   secret_access_key:
     secure: AhXveEvSo50nuCJjJJeNv9WVspjnZfyFLtMPTSKjkrTTsiHjDBRgHhp6nOEVIzL8Q2k+XoPwX+korB5vhyKaR81+ITis/Dq8JbBhk7zFHdDpaLh1SJ/Yw7LlaF6abET2HWET2wudFYClsEObWsVnv7Jt0tRt9WyJPpJf/p9sYLJsFPB3t8tfMQlKm7UgkSeEkSqjojMwYVon4K3Y6A+YgsoOwms29eD7jq1g2iFHbtOCFJ+v8x4x2yHYIbvOryQN/m7tDFdKckOYIfWKooan+lXr6goZPQswXqH0MUIO3RTHyZGo1P8fR65JFP0031bBJ4YJbGq7kgJF8BJQsiVlU9VTQhmjvjDLOwPmsT8dMzsvT+rNM8rlmZ57Ezi9VNvitEQndVzwgP168nKaGK89koC8MwPrIdmW8CIE9LC/Em5ixgI0ybNXQ1bAZwMEnvm/ewUKaURIE8UhKZAPF4sDQrA0iekF/GOLrE7gYnW29CLdeYWl0JsU49S4D8emZ33tjZGO9/0MTeBmvcctKeTps/AGxK0Crny3XtrbLlFR/dumm6ZKyCkEJdui1ta+v2MSd5i95jPx9vm7fAAjRsT6sS4XBikUtaSzAcFhZZ+jL0sw+KdypWoVNF9YlYLo054MZh+6bsJZfBMTAc5VAcxnr+s+uCwK4J7EfkRVmwF9y8k=
-  bucket: jekylldocs.${TRAVIS_BRANCH}
+  bucket: jekylldocs.$TRAVIS_BRANCH
   local-dir: _site
   skip_cleanup: true
   acl: public_read
