@@ -1,5 +1,5 @@
 # Documentation theme for Jekyll 
 
-[![Build Status](https://travis-ci.org/npateman/documentation-theme-jekyll.svg?branch=nick)](https://travis-ci.org/npateman/documentation-theme-jekyll)
+[![Build Status](https://drone.io/github.com/npateman/documentation-theme-jekyll/status.png)](https://drone.io/github.com/npateman/documentation-theme-jekyll/latest)
 
-Bla bla bla, something something
+This branch is currently being built by drone.io.
