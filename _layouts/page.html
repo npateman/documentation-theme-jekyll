@@ -35,6 +35,16 @@ layout: default
 
 </div>
 
+<div>
+  {% for p in site.pages %}
+	{% if p.title and page.contentful_locale == p.contentful_locale %}
+	  {% if p.url == page.url %}
+		<span>{{ p.title }}</span>
+	  {% endif %}
+	{% endif %}
+  {% endfor %}
+</div>
+
 {{hr_shaded}}
 
 {% include footer.html %}
