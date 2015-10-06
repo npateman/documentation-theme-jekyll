@@ -6,7 +6,7 @@ product: all
 platform: all
 version: all
 destination: _site
-topnav_title: Nick Branch Bla bla bla
+topnav_title: Nick Branch
 homepage_title: Jekyll Documentation Theme &mdash; Designers
 site_title: Jekyll Documentation Theme &mdash; Designers
 disqus_shortname: idrbwjekyll
