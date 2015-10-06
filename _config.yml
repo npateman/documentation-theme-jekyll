@@ -61,4 +61,19 @@ defaults:
       layout: "post"
       comments: true
 
+contentful:
+  preview: No 
+  production_access_token: '1c340333ff53a8743c0ff928ba7bc57682aadb899e3f48671775fef5ff1aeb73'
+  preview_access_token: 'd84230c4f2d0e429fcaa975bb55e2b71ed532956e77d58878a8dae998bf3ef92'
+  space: 'Blogs'
+  content_types:
+   - "Author"
+   - "Category"
+   - "Post"
+  published_locales_field: "published_languages"
+  localization:
+  - locale: en-UK
+    url_prefix: ""
+    lang: "English"
+
 exclude: ['vendor']
